@@ -2,6 +2,6 @@
 -- the states table contains only one record where name = california
 -- results must be sorted in ascending order by cities.id
 -- you are not allowed to use the JOIN keyword
--- the database name will be passsed as an arrangement of the MySQL command
+-- the database name will be passsed as an argument of the MySQL command
 
 SELECT id, name FROM cities ;WHERE state_id = (SELECT id FROM states WHERE name = "california") ORDER BY id;
